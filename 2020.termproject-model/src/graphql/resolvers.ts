@@ -1,4 +1,4 @@
-import {Item, getById, sampleItems, addItem} from "./db";
+import {Item, getById, sampleItems, addItem, delItem} from "./db";
 
 export const resolvers = {
     Query: {
@@ -6,6 +6,7 @@ export const resolvers = {
         item: (_ : any, obj : Item) => {return getById(obj.id)}
     },
     Mutation: {
-        addItem: (_ : any, obj : Item) => {return addItem(obj)}
+        addItem: (_ : any, obj : Item) => {return addItem(obj)},
+        delItem: (_ : any, obj : Item) => {return delItem(obj.id)}
     }
 }

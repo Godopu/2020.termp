@@ -15,4 +15,5 @@ type Query {
 #Define Mutation
 type Mutation {
 	addItem(name: String!, age: Int!, from: String!): Boolean!
+	delItem(id: Int!): Boolean!
 }
