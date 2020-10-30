@@ -16,9 +16,9 @@ export default () => {
 
   const l = useQuery(GET_ITEMS);
   const e = useQuery(GET_ITEM, {
-    variables : {name : "Joonghwa", id : 24142}
+    variables : {id : 14123}
   });
-
+  
   return (
     <Container>
       {l.loading && <div>Loading...</div>}  
@@ -28,8 +28,8 @@ export default () => {
             ))}
       </div>
 
-      {e.loading && <div>Loading...</div>}
       <p>
+        {e.loading && <div>Loading...</div>}
         {e.data?.item?.name} 
       </p>
     </Container>

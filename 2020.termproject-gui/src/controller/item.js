@@ -9,8 +9,8 @@ query {
 `
 
 export const GET_ITEM = gql`
-query itemData($name : String!, $id : Int!){
-  item(name : $name, id : $id) {
+query ($id : Int!){
+  item(id : $id) {
     id 
     name 
     age
