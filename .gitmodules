@@ -1,0 +1,12 @@
+[submodule "termproject.sample.tandd"]
+	path = termproject.sample.tandd
+	url = https://github.com/Godopu/termproject.sample.tandd.git
+[submodule "termproject.sample.android"]
+	path = termproject.sample.android
+	url = https://github.com/Godopu/termproject.sample.android.git
+[submodule "termproject.sample.express"]
+	path = termproject.sample.express
+	url = https://github.com/Godopu/termproject.sample.express.git
+[submodule "termproject.sample.door"]
+	path = termproject.sample.door
+	url = https://github.com/Godopu/termproject.sample.door.git
