@@ -2,12 +2,23 @@ import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
 import Home from "../routes/Home";
 
-function App() {
+
+export default ()=>{
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
+
+  setInterval(()=>{
+    refreshPage()
+  }, 5000);
+
+
   return (
     <Router>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component = {() => <Home /> }/>
     </Router>
   );
+
 }
 
-export default App;

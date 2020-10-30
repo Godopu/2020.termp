@@ -48,10 +48,10 @@ async function delItem(client : ApolloClient<unknown>, id : number){
   // list 조회
   await getItems(client);
 
-  // item 조회
+  // // item 조회
   await getItem(client, 14123);
 
-  // item 추가
+  // // item 추가
   let obj : Item = {
     id : 0,
     name : "Kil-Dong",
@@ -61,5 +61,5 @@ async function delItem(client : ApolloClient<unknown>, id : number){
   await addItem(client, obj);
 
   // item 삭제
-  await delItem(client, 33495);
+  await delItem(client, 24123);
 })()

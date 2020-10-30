@@ -1,5 +1,5 @@
 import React from "react";
-import { useQuery } from "@apollo/react-hooks";
+import {useQuery} from "@apollo/react-hooks";
 import styled from "styled-components";
 import {GET_ITEM, GET_ITEMS} from "../controller/item";
 
@@ -28,10 +28,8 @@ export default () => {
             ))}
       </div>
 
-      <p>
         {e.loading && <div>Loading...</div>}
         {e.data?.item?.name} 
-      </p>
     </Container>
   );
 };
