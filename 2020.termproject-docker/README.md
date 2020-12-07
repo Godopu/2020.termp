@@ -37,6 +37,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 ```zsh
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 
@@ -44,7 +45,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 # docker image build
 
 ```zsh
-docker-compose build
+sudo docker-compose build
 ```
 
 
@@ -54,8 +55,8 @@ docker-compose build
 - move to application root directory
 
 ```zsh
-docker-compose up # Run with prompt
-docker-compose up -d # Run as daemon
+sudo docker-compose up # Run with prompt
+sudo docker-compose up -d # Run as daemon
 ```
 
 
