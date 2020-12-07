@@ -41,6 +41,14 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 
 
 
+# docker image build
+
+```zsh
+docker-compose build
+```
+
+
+
 # Application Running
 
 - move to application root directory
@@ -48,5 +56,13 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 ```zsh
 docker-compose up # Run with prompt
 docker-compose up -d # Run as daemon
+```
+
+
+
+# Application Termination
+
+```
+docker-compose down
 ```
 
